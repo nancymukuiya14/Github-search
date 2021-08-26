@@ -4,11 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { UsernamePageComponent } from './username-page/username-page.component';
+import { RepositoryPageComponent } from './repository-page/repository-page.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    LandingPageComponent,
+    UsernamePageComponent,
+    RepositoryPageComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
