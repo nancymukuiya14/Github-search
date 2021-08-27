@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apikey:"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",
+  apikey:"",
   url:"https://api.github.com/users/WilsonKinyua/repos"
 };
 
