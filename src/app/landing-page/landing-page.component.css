@@ -1,5 +1,15 @@
 .card{
     border-radius: 20px;
     
-
+}
+img {
+    height: 200px;
+    width: 200px;
+}
+.carduser {
+    width: 37%;
+}
+.card2 {
+    position: relative;
+    right:200px;
 }

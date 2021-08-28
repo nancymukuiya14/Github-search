@@ -1,47 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card mt-5" style="width: 18rem;">
-                    <img src="./assets/nancyspic.jpg" class="card-img-top" alt="...">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="carduser">
+                <div class="card mt-5">
+                    <img src="{{userDetails?.avatar_url}}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Nancy Kigotho</h5>
-                        <p class="card-text">nancymukuiya14</p>
+                        <h5 class="card-title"> {{userDetails.name}}</h5>
+                        <p class="card-text"></p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Lets Code!</li>
-                        <li class="list-group-item"><i class="fa fa-map-pin"> Nairobi Kenya</i></li>
-                        <li class="list-group-item"><i class="fa fa-twitter">@mukuiyakigotho</i></li>
+                        <li class="list-group-item">{{userDetails.bio}}</li>
+                        <li class="list-group-item"><i class="fa fa-map-pin">{{userDetails.location}}</i></li>
+                        <li class="list-group-item"><i class="fa fa-twitter">{{userDetails.twitter_username}}</i></li>
+                        <li class="list-group-item"><i class="fa fa-globe">{{userDetails.created_at|date}}</i></li>
+
                     </ul>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card2">
-                    <div class="card border-success mt-5" style="max-width: 18rem;">
-                        <div class="card-header">Header</div>
-                        <div class="card-body">
-                            <h5 class="card-title">Info card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the
-                                card's content.</p>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-6" *ngFor="let repository of gottenUserRepository; let i = index">
+                    <div class="card2">
+                        <div class="card border-success mt-5">
+                            <div class="card-header"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">{{repository.name}}</h5>
+                                <p class="card-text">{{repository.description}}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-</body>
-
-</html>
+</div>

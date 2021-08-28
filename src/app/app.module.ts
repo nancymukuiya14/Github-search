@@ -8,6 +8,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { UsernamePageComponent } from './username-page/username-page.component';
 import { RepositoryPageComponent } from './repository-page/repository-page.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { GithubSearchService } from './github-service/github-search.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
