@@ -5,14 +5,14 @@
                 <div class="card mt-5">
                     <img src="{{userDetails?.avatar_url}}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title"> {{userDetails.name}}</h5>
+                        <h5 class="card-title"> {{userDetails?.name}}</h5>
                         <p class="card-text"></p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">{{userDetails.bio}}</li>
-                        <li class="list-group-item"><i class="fa fa-map-pin">{{userDetails.location}}</i></li>
-                        <li class="list-group-item"><i class="fa fa-twitter">{{userDetails.twitter_username}}</i></li>
-                        <li class="list-group-item"><i class="fa fa-globe">{{userDetails.created_at|date}}</i></li>
+                        <li class="list-group-item">{{userDetails?.bio}}</li>
+                        <li class="list-group-item"><i class="fa fa-map-pin">{{userDetails?.location}}</i></li>
+                        <li class="list-group-item"><i class="fa fa-twitter">{{userDetails?.twitter_username}}</i></li>
+                        <li class="list-group-item"><i class="fa fa-globe">{{userDetails?.created_at|date}}</i></li>
 
                     </ul>
                 </div>

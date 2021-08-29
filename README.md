@@ -1,4 +1,21 @@
-# GithubSearch
+## Project Name
+ Github-Search
+## Developed by:
+Nancy Kigotho.
+## Description.
+This is a website where a user can input his/her github username and get to see his/her profile and all his/her repositories. 
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
+## Installation setup
+* Fork the repository
+* clone the project
+* cd Github-Search in your terminal
+* Run the command code.
+## Contact information
+Incase you have any question or you woul want to work with me reach me via nancykigotho14@gmail.com
+## Live link
+
+## GithubSearch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
 
