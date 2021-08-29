@@ -10,6 +10,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { GithubSearchService } from './github-service/github-search.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     LandingPageComponent,
     UsernamePageComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
