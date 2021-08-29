@@ -11,6 +11,7 @@ import { GithubSearchService } from './github-service/github-search.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { DateCountPipe } from './date-count.pipe';
+import { RepositoryPageComponent } from './repository-page/repository-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DateCountPipe } from './date-count.pipe';
     LandingPageComponent,
     UsernamePageComponent,
     NotFoundComponent,
-    DateCountPipe
+    DateCountPipe,
+    RepositoryPageComponent
   ],
   imports: [
     BrowserModule,
