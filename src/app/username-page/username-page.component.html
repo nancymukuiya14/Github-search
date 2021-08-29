@@ -3,23 +3,39 @@
         <div class="col-md-12 text-center">
             <div class="box">
                 <form class="mt-5 ml-5">
-                    <input class="text" type="text" name="search" placeholder="Search User...">
-                    <button class="submit" type="submit" name="submit">Search</button>
+                    <input class="text" type="text" name="search" [(ngModel)]="username" placeholder="Search User...">
+                    <button class="submit" type="submit" name="submit" (click)="searchUserDetails()">Search</button>
                 </form>
             </div>
         </div>
-    </div>
-</div>
-<div class="col-md-6" style="max-width: 18rem">
-    <div class="card2">
-        <div class="card border-success ml-5 mt-5">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-                <h5 class="card-title">Info card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                    of
-                    the
-                    card's content.</p>
+        <div class="col-md-6"  [hidden]="!userDetails">
+            <div class="carduser">
+                <div class="card mt-5"  >
+                    <img src="{{userDetails?.avatar_url}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"> {{userDetails?.name}}</h5>
+                        <p class="card-text"></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">{{userDetails?.bio}}</li>
+                        <li class="list-group-item"><i class="fa fa-map-pin">{{userDetails?.location}}</i></li>
+                        <li class="list-group-item" [hidden]="!userDetails?.twitter_username"><i
+                                class="fa fa-twitter">{{userDetails?.twitter_username}}</i></li>
+                        <li class="list-group-item"><i class="fa fa-globe">{{userDetails?.created_at|date}}</i></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6" *ngFor="let repository of gottenUserRepository; let i = index">
+            <div class="card2">
+                <div class="card border-success mt-5">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{repository.name}}</h5>
+                        <p class="card-text">{{repository.description}}</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -10,6 +10,7 @@ import { RepositoryPageComponent } from './repository-page/repository-page.compo
 import { NotFoundComponent } from './not-found/not-found.component';
 import { GithubSearchService } from './github-service/github-search.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
