@@ -8,6 +8,7 @@
                 </form>
             </div>
         </div>
+    <div class="row">
         <div class="col-md-6"  [hidden]="!userDetails">
             <div class="carduser">
                 <div class="card mt-5"  >
@@ -27,8 +28,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6" *ngFor="let repository of gottenUserRepository; let i = index">
-            <div class="card2">
+        <div class="col-md-6">
+            <div class="row">
+            <div class="col-md-4" *ngFor="let repository of gottenUserRepository; let i = index">
                 <div class="card border-success mt-5">
                     <div class="card-header"></div>
                     <div class="card-body">
@@ -38,5 +40,7 @@
                 </div>
             </div>
         </div>
+        </div>
+    </div>
     </div>
 </div>
