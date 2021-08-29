@@ -10,7 +10,6 @@ import { Component, Input, OnInit } from '@angular/core';
 export class UsernamePageComponent implements OnInit {
 
 
-<<<<<<< HEAD
   username='';
   userDetails :Username;
   gottenUserRepository:any;
@@ -47,9 +46,3 @@ export class UsernamePageComponent implements OnInit {
       );
     }
   }
-=======
-  ngOnInit() {
-  }
-
-}
->>>>>>> 70f88a4d8250abf645e9598d0d8c0349e2a9515a
